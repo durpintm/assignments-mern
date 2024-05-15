@@ -2,6 +2,8 @@ const { Router } = require("express");
 const adminMiddleware = require("../middleware/admin");
 const router = Router();
 
+// does not mean, this handles the /signup endpoint
+// it handles /admin/signup
 // Admin Routes
 router.post("/signup", (req, res) => {
   // Implement admin signup logic
